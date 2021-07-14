@@ -1,0 +1,33 @@
+.currencies {
+  background-color: white;
+  height: 0;
+  overflow-y: auto;
+  transition: 0.3s;
+
+  &--open {
+    height: 350px;
+  }
+
+  h2 {
+    color: #bc5435;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 24px 14px 14px;
+    border-bottom: 2px solid #f0c5b6;
+  }
+  
+  .name {
+    color: #bc5435;
+    font-size: 1.4em;
+    padding: 24px 14px 14px;
+    border-bottom: 2px solid #f0c5b6;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .name:hover {
+    background-color: #f0c5b6;
+    transition: 0.2s;
+  }
+}
+

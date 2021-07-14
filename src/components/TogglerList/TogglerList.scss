@@ -1,0 +1,25 @@
+@use 'src/styles/vars';
+
+.toggle-list {
+  position:relative;
+  z-index: 1;
+  width: 74px;
+  height: 74px;
+  display: block;
+  margin: -36px auto;
+  border-radius: 50%;
+  background-color: vars.$ternary;
+  border: 6px solid vars.$secondary;
+  font-size: 2em;
+  font-weight: bold;
+  color: vars.$secondary;
+  transition: transform 0.3s, background-color 0.3s; 
+
+  &:hover {
+    background-color: vars.$primary;
+  }
+
+  &--open {
+    transform: rotate(90deg)
+  }
+}

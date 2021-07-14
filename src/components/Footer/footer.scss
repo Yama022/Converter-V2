@@ -1,0 +1,21 @@
+@use 'src/styles/vars';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: vars.$secondary;
+  background-color: vars.$ternary;
+  padding: 50px 0 30px;
+
+  .converted {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .selectedCurrency {
+    font-size: 2em;
+  }
+}
